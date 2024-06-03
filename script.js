@@ -7,7 +7,7 @@ function consultaAPI() {
 
     city = document.getElementById("place-input").value;
     apiKey = "6500c4c1dc1a29a7de77dacbf7fc1ff2";
-    url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey + "&units=metric";
+    url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey + "&units=metric";
     xhr = new XMLHttpRequest();
     xhr.onload = function() {
         mostrarInformacion(this)
